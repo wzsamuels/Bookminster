@@ -18,8 +18,8 @@ export default function NavBar({clickAdd}) {
 
   return (
     <div className={navBarClasses}>
-      <a href="/">WZ</a>
-      <a onClick={clickAdd}>Add Book</a>
+      <a href="/" className="active">WZ</a>
+      <a href="#" onClick={clickAdd}>Add Book</a>
       <a href="javascript:void(0);" className="icon" onClick={onEvent}>
           <i className="fa fa-bars"></i>
         </a>
