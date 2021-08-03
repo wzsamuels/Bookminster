@@ -1,0 +1,44 @@
+/** Book App Styles **/
+
+/* Ordered lists */
+
+ul.book-bottom-nav li {
+    float: left;
+    text-align:center;
+    padding-right:10px;
+    padding-left:10px;
+    width: 20%;
+    /*text-align:center;*/
+}
+/*
+ul.book-bottom-nav li a {
+    display: block;
+    background-color: DodgerBlue;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+ul.book-bottom-nav li button {
+    border:none;
+    background-color: DodgerBlue;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    width:100%
+}*/
+
+@media screen and (max-width: 600px) {    
+    ul.book-bottom-nav {margin-left:-50px; left:20%;}
+    ul.book-bottom-nav li {width:40%}
+}
+/*
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}*/

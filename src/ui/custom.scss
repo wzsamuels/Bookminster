@@ -1,0 +1,153 @@
+
+@import "../../node_modules/bootstrap/scss/functions";
+
+
+$biege: #DBD3A4;
+$blue: #4B5F80;
+$red: #67161C;
+$green: #3F6148;
+$text-color: black;
+$tan: #A4804C;
+
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities";
+
+// Layout & components
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+//@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/buttons";
+//@import "../../node_modules/bootstrap/scss/dropdown";
+//@import "../../node_modules/bootstrap/scss/button-group";
+//@import "../../node_modules/bootstrap/scss/navbar";
+//@import "../../node_modules/bootstrap/scss/nav";
+//@import "../../node_modules/bootstrap/scss/list-group";
+//@import "../../node_modules/bootstrap/scss/close";
+//@import "../../node_modules/bootstrap/scss/modal";
+
+// Helpers
+//@import "../../node_modules/bootstrap/scss/helpers";
+
+// Utilities
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+//@use '../../node_modules/bootstrap/scss/bootstrap';
+
+/* Dark theme colors */
+
+/*
+$light-purple: #A4ADD6;
+$tan: #A97637;
+$purple: #5653A0;
+
+$dark-purple: #020111;
+$green: #728873;
+
+*/
+
+.main {
+  margin-bottom: 30px; /* Add a bottom margin to avoid content overlay */
+}
+
+ body {
+     background-color: white;
+     color: $text-color;
+ }
+
+/* Rounded border */
+hr.rounded {
+  border-top: 8px solid $blue;
+  border-radius: 5px;
+}
+
+.button-submit{
+    @extend .btn;
+    background-color: $green;
+    color: white;
+}
+
+
+.button-cancel {
+    @extend .btn;
+    color: white;
+    background-color: $red;
+}
+
+textarea {
+    height: 6em;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.form-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+.error {
+  background-color: #efacac;
+  border: double 4px darkred;
+  color: darkred;
+  padding: 1em;
+}
+
+ul.list {
+  list-style-type: none;
+  margin: 5px;
+  padding: 5px;
+}
+
+ul.list li {
+  display: block;
+  padding: 15px 15px;
+  text-decoration: none;
+}
+
+.book-container {
+    margin-bottom:60px;
+}
+
+/** Bottom Nav Bar **/
+
+ul.book-bottom-nav {
+  list-style-type: none;
+  left:40%;
+  margin-left:-100px;
+  overflow: hidden;
+  background-color:transparent;
+  position: fixed;
+  bottom: 0;
+  width:100%;
+  height:50px;
+}
