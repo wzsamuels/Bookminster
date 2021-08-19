@@ -5,6 +5,7 @@ import './ui/custom.scss'
 import AddPostForm from './AddBookForm';
 import NavBar from './navbar';
 import { config, useSpring, animated } from 'react-spring'
+import BottomNav from './bottomnav';
 
 export default function App() {
   const [isBookFormVisible, toggleBookFormVisible] = useReducer(isBookFormVisible => !isBookFormVisible, false);
@@ -27,6 +28,7 @@ export default function App() {
           <br/>
           <BookList/>
         </div>
+        <BottomNav clickAdd={toggleBookFormVisible}/>
       </animated.div>
     </>
   );

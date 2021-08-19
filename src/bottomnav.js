@@ -17,13 +17,9 @@ export default function BottomNav({clickAdd}) {
   }
 
   return (
-    <div className={navBarClasses}>
-      <a href="/">WZ</a>
-      <a onClick={clickAdd}>Add Book</a>
-      <a href="javascript:void(0);" className="icon" onClick={onEvent}>
-          <i className="fa fa-bars"></i>
-        </a>
-  </div>
+    <div className="bottom-nav">
+      <button className="circle"><i className="icon" onClick={clickAdd} class="fa fa-plus-circle fa-5x"></i></button>
+    </div>
   )
 }
 
